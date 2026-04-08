@@ -20,7 +20,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 	// 우리가 만든 클래스가 아니기 때문에 @Component를 붙일 수 없고 수동으로 직접 @Bean을 등록해야 함
 	public ViewResolver viewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-		resolver.setPrefix("/WEB-INF/views");
+		resolver.setPrefix("/WEB-INF/views/");
 		resolver.setSuffix(".jsp");
 		return resolver;
 	}

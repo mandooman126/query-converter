@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f7f9fc;
+    color: #222;
+}
+
+h1 {
+    color: #1f4f91;
+    margin-bottom: 24px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #cfd8e3;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+button {
+    padding: 8px 14px;
+    margin-right: 8px;
+    border: 1px solid #1f4f91;
+    background-color: #1f4f91;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #163d70;
+}
+
+#mappingRows {
+    margin-bottom: 10px;
+}
+
+.mapping-row {
+    margin-bottom: 8px;
+}
+
+.mapping-row input {
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #cfd8e3;
+    border-radius: 4px;
+    width: 220px;
+}
+
+.mapping-row button {
+    background-color: #b93b3b;
+    border-color: #b93b3b;
+}
+
+.mapping-row button:hover {
+    background-color: #922d2d;
+}
+
+#errorMsg {
+    color: red;
+    font-weight: bold;
+}
+
+#changeLog {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #eef7ee;
+    border: 1px solid #b8d8b8;
+    border-radius: 4px;
+}
+
+#totalBadge {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1f4f91;
+}
