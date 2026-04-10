@@ -1,18 +1,8 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 30px;
-    background-color: #f7f9fc;
-    color: #222;
-}
-
-h1 {
-    color: #1f4f91;
-    margin-bottom: 24px;
-}
-
-h3 {
-    margin-bottom: 10px;
-    color: #333;
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: start;
 }
 
 textarea {
@@ -23,16 +13,62 @@ textarea {
     border-radius: 4px;
     font-family: Consolas, monospace;
     font-size: 13px;
+    line-height: 1.5;
     box-sizing: border-box;
     background-color: #fff;
+    resize: vertical;
+}
+
+.panel {
+    background-color: #ffffff;
+    border: 1px solid #d9e2ec;
+    border-radius: 6px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.query-panel textarea,
+.result-panel textarea {
+    min-height: 420px;
+}
+
+#mappingRows {
+    margin-bottom: 12px;
+}
+
+.mapping-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.mapping-row input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #cfd8e3;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.mapping-row button {
+    padding: 8px 12px;
+    border: 1px solid #c94a4a;
+    background-color: #c94a4a;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mapping-row button:hover {
+    background-color: #a93636;
 }
 
 button {
     padding: 8px 14px;
-    margin-right: 8px;
     border: 1px solid #1f4f91;
     background-color: #1f4f91;
-    color: white;
+    color: #ffffff;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -41,46 +77,10 @@ button:hover {
     background-color: #163d70;
 }
 
-#mappingRows {
-    margin-bottom: 10px;
-}
-
-.mapping-row {
-    margin-bottom: 8px;
-}
-
-.mapping-row input {
-    padding: 8px;
-    margin-right: 8px;
-    border: 1px solid #cfd8e3;
-    border-radius: 4px;
-    width: 220px;
-}
-
-.mapping-row button {
-    background-color: #b93b3b;
-    border-color: #b93b3b;
-}
-
-.mapping-row button:hover {
-    background-color: #922d2d;
-}
-
-#errorMsg {
-    color: red;
-    font-weight: bold;
-}
-
-#changeLog {
+.button-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
     margin-top: 10px;
-    padding: 10px;
-    background-color: #eef7ee;
-    border: 1px solid #b8d8b8;
-    border-radius: 4px;
 }
 
-#totalBadge {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #1f4f91;
-}
